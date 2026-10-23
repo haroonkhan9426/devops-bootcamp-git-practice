@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const prices = { tomato: 180, onion: 120, potato: 90, spinach: 60 };
 app.get("/", (req, res) => {
-res.send("SabziCart (Developed by Haroon Khan) API is running. This is V2. Try /api/prices\n");
+res.send("nodejsapi (Developed by Haroon Khan) API is running. This is V2. Try /api/prices\n");
 });
 app.get("/api/f1", (req, res) => {
 res.send("Welcome to Feature-1");
