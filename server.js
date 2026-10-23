@@ -10,6 +10,9 @@ res.send("NodeAPI (Developed by Haroon Khan) API is running. This is V2. Try /ap
 app.get("/api/f1", (req, res) => {
 res.send("Welcome to Feature-1");
 });
+app.get("/api/gh", (req, res) => {
+res.send("Github Actions deployed successfully");
+});
 app.get("/api/health", (req, res) => {
 res.json({ status: "ok", server: os.hostname(), node: process.version });
 });
