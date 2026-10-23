@@ -22,4 +22,5 @@ jobs:
             echo "Pulling latest changes from main branch..."
             git pull origin main
             echo "Latest changes pulled successfully."
+            echo $USER
             # pm2 restart server --update-env
