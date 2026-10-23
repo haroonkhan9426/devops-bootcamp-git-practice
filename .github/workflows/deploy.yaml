@@ -19,5 +19,7 @@ jobs:
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
             cd /var/www/devops_bootcamp/devops-bootcamp-git-practice
+            echo "Pulling latest changes from main branch..."
             git pull origin main
-            pm2 restart server --update-env
+            echo "Latest changes pulled successfully."
+            # pm2 restart server --update-env
