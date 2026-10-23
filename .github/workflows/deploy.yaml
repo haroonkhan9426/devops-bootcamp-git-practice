@@ -21,4 +21,4 @@ jobs:
             cd /var/www/devops_bootcamp/devops-bootcamp-git-practice
             git pull origin main
             npm install
-            pm2 restart server --update-env`1`  1';lmop ' p'
+            pm2 restart server --update-env
