@@ -5,17 +5,17 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const prices = { tomato: 180, onion: 120, potato: 90, spinach: 60 };
 app.get("/", (req, res) => {
-res.send("NodeAPI (Developed by Haroon Khan) API is running. This is V2. Try /api/prices\n");
+    res.send("NodeAPI (Developed by Haroon Khan) API is running. This is V2. Try /api/prices\n");
 });
 app.get("/api/f1", (req, res) => {
-res.send("Welcome to Feature-1");
+    res.send("Welcome to Feature-1");
 });
 app.get("/api/health", (req, res) => {
-res.json({ status: "ok", server: os.hostname(), node: process.version });
+    res.json({ status: "ok", server: os.hostname(), node: process.version });
 });
 app.get("/api/prices", (req, res) => {
-res.json({ currency: "PKR per kg", prices: prices });
+    res.json({ currency: "PKR per kg", prices: prices });
 });
-app.listen(PORT, "127.0.0.1", () => {
-console.log(`SabziCart API listening on 127.0.0.1:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`SabziCart API listening on 127.0.0.1:${PORT}`);
 });
